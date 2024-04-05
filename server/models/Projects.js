@@ -6,6 +6,7 @@ const ProjectSchema = new mongoose.Schema(
     name: {
       type: String,
       required: true,
+      unique: true,
       min: 2,
       max: 50,
     },
